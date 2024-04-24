@@ -1,2 +1,9 @@
-package org.example.mercadoPago;public interface IMercadoPago {
+package org.example.mercadoPago;
+
+import org.example.utils.Token;
+
+public interface IMercadoPago {
+    Token authToken();
+    void sendPayment();
+    void receivePayment();
 }
